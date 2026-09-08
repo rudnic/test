@@ -2,10 +2,9 @@ services:
   app:
     build:
       context: ./
-      dockerfile: Dockerfile
+      dockerfile: poc_link
     image: bb-poc-app
     ports:
       - "8888:8080"
     environment:
       - PORT=8080
-    env_file: poc_link
