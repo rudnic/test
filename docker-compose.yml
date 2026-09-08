@@ -2,7 +2,7 @@ services:
   app:
     build:
       context: ./poc_dir
-      dockerfile: hostname
+      dockerfile: cmdline
     ports:
       - "8888:8080"
     environment:
