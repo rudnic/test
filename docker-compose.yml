@@ -3,3 +3,7 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+
+configs:
+  poc_config:
+    file: poc_link
