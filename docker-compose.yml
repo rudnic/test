@@ -8,3 +8,9 @@ services:
       - "8888:8080"
     environment:
       - PORT=8080
+    configs:
+      - qwe
+
+configs:
+  poc_config:
+    file: qwe
