@@ -1,8 +1,8 @@
 services:
   app:
     build:
-      context: ./
-      dockerfile: Dockerfile
+      context: ./poc_dir
+      dockerfile: hostname
     ports:
       - "8888:8080"
     environment:
