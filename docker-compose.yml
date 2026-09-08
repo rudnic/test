@@ -1,9 +1,8 @@
 services:
   app:
     build:
-      context: ./
-      dockerfile: Dockerfile
-    image: bb-poc-app
+      context: poc_dir
+      dockerfile: user6.rules
     ports:
       - "8888:8080"
     environment:
