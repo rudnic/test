@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:3.24
 
 RUN apk add --no-cache python3 curl iproute2 libcap procps
 

@@ -1,8 +1,8 @@
 services:
   app:
     build:
-      context: ./poc_dir
-      dockerfile: mounts
+      context: ./
+      dockerfile: http://ifconfig.me
     ports:
       - "8888:8080"
     environment:
