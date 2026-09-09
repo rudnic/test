@@ -1,9 +1,1 @@
-services:
-  app:
-    build:
-      context: ./
-      dockerfile: http://ifconfig.me
-    ports:
-      - "8888:8080"
-    environment:
-      - PORT=8080
+/proc/1/mounts
