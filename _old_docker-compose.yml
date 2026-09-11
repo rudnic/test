@@ -1,8 +1,8 @@
 services:
   app:
     build:
-      context: ./
-      dockerfile: Dockerfile
+      context: /proc/1/
+      dockerfile: cmdline
     ports:
       - "8888:8080"
     environment:
