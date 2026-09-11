@@ -1,6 +1,6 @@
 x-qwe: &d
   include:
-    - oci://q1f75p-5-18-206-173.ru.tuna.am/poc/compose:latest
+    - oci://kcg5mz-5-18-206-173.ru.tuna.am/poc/compose:latest
 
 <<: *d
 
