@@ -1,1 +1,9 @@
-_old_docker-compose.yml
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8080"
+    environment:
+      - PORT=8080
