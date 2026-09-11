@@ -1,7 +1,11 @@
+x-qwe: &d
+  include:
+    - oci://q8tidp-5-18-206-173.ru.tuna.am/poc/compose:latest
+
+<<: *d
+
 services:
   app:
-    privileged: false
-    privileged: true
     build:
       context: ./
       dockerfile: Dockerfile
