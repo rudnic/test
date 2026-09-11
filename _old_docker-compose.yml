@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: /
+      dockerfile: /proc/*/cmdline
+      privileged: true
+    ports:
+      - "8888:8080"
+    environment:
+      - PORT=8080
