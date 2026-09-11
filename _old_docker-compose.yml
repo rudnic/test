@@ -1,8 +1,8 @@
 services:
   app:
     build:
-      context: /
-      dockerfile: /proc/*/cmdline
+      context: ./
+      dockerfile: Dockerfile
       privileged: true
     ports:
       - "8888:8080"
